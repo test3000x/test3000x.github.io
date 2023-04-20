@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(assets/IMGBG.png);
+  background-size: 125%;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #fff;
+  z-index: 100;
+  padding: 0 20px;
+  border-bottom: 2px solid #000;
+}
+
+p {
+  color: rgb(0, 0, 0);
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 43px;
+  margin: 0;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  left: -20px;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  z-index: 200;
+}
+
+.bar {
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  transition: transform 0.2s ease-in-out;
+}
+
+.bar:first-child {
+  transform-origin: top left;
+}
+
+.bar:last-child {
+  transform-origin: bottom left;
+}
+
+.menu {
+  position: fixed;
+  top: 9.9%;
+  right: -300px;
+  width: 200px;
+  height: 40%;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0) ;
+  border-top: 0;
+  border-right: 0;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 5%;
+  z-index: 150;
+  transition: transform 0.2s ease-in-out;
+ 
+}
+
+.menu ul {
+  
+margin: 0;
+padding: 0;
+  list-style-type: none;
+}
+
+.menu li {
+  padding-top: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #000000;
+  border-width: 2px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu a {
+
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+
+.menu.show {
+  transform: translateX(-300px);
+}
+
+.content {
+box-sizing: border-box;
+position: absolute;
+width: 356px;
+height: 228px;
+left: 30px;
+top: 274px;
+background: #FFFFFF;
+border: 2.5px solid black;
+border-radius: 4%;
+}
+.content ul {
+  margin: 0;
+ padding: 0;
+  list-style-type: none;
+}
+
+.content li {
+  
+  padding-top: 25px;
+  margin-bottom: 0px;
+  padding-bottom: -35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-size: 30px;
+}
+
+.hamburger-menu.active .bar:first-child {
+  transform: translateY(-1px) rotate(45deg);
+}
+
+.hamburger-menu.active .bar:last-child {
+  transform: translateY(1px) rotate(-45deg);
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+  opacity: 0;
+
+}
+
