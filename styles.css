@@ -87,7 +87,7 @@ p {
 }
 
 .menu li {
-  padding-top: 15px;
+  padding-top: 30px;
   margin-bottom: 10px;
   border-bottom: 1px solid #ffffff;
   border-width: 2px;
@@ -100,7 +100,7 @@ p {
 .menu a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .menu.show {
