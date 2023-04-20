@@ -61,15 +61,13 @@ p {
 
 .menu {
   position: fixed;
-  top: 10%;
+  top: 12%;
   right: -300px;
   width: 200px;
   height: 40%;
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(0, 0, 0);
-  border-top: 0;
-  border-right: 0;
-  border-top-right-radius: 0px;
+
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 5%;
   z-index: 150;
