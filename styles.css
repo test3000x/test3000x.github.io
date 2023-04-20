@@ -24,7 +24,7 @@ header {
 
 p {
   color: rgb(0, 0, 0);
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -61,12 +61,12 @@ p {
 
 .menu {
   position: fixed;
-  top: 9.9%;
+  top: 10%;
   right: -300px;
   width: 200px;
   height: 40%;
   background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(0, 0, 0) ;
+  border: 2px solid rgb(0, 0, 0);
   border-top: 0;
   border-right: 0;
   border-top-right-radius: 0px;
@@ -74,13 +74,11 @@ p {
   border-bottom-left-radius: 5%;
   z-index: 150;
   transition: transform 0.2s ease-in-out;
- 
 }
 
 .menu ul {
-  
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -96,11 +94,9 @@ padding: 0;
 }
 
 .menu a {
-
   color: #000000;
   text-decoration: none;
   font-size: 20px;
-
 }
 
 .menu.show {
@@ -108,31 +104,30 @@ padding: 0;
 }
 
 .content {
-box-sizing: border-box;
-position: absolute;
-width: 356px;
-height: 228px;
-left: 30px;
-top: 274px;
-background: #FFFFFF;
-border: 2.5px solid black;
-border-radius: 4%;
+  box-sizing: border-box;
+  position: absolute;
+  width: 356px;
+  height: 228px;
+  left: 30px;
+  top: 274px;
+  background: #ffffff;
+  border: 2.5px solid black;
+  border-radius: 4%;
 }
 .content ul {
   margin: 0;
- padding: 0;
+  padding: 0;
   list-style-type: none;
 }
 
 .content li {
-  
   padding-top: 25px;
   margin-bottom: 0px;
   padding-bottom: -35px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   font-size: 30px;
 }
 
@@ -146,6 +141,4 @@ border-radius: 4%;
 
 .hamburger-menu.active .bar:nth-child(2) {
   opacity: 0;
-
 }
-
