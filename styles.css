@@ -118,6 +118,7 @@ p {
   background: #ffffff;
   border: 2.5px solid black;
   border-radius: 4%;
+  box-shadow: 8px 20px #2c2b2bd8;
 }
 .content ul {
   margin: 0;
