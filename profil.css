@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
 }
 
 header {
@@ -61,7 +60,7 @@ p {
 
 .menu {
   position: fixed;
-  top: 10.8%;
+  top: 11.9%;
   right: -301px;
   width: 200px;
   height: 56.6%;
@@ -76,6 +75,27 @@ p {
   background-repeat: no-repeat;
   background-position-x: 20px;
   background-position-y: bottom;
+}
+@media only screen and (device-width: 430px) and (device-height: 932px) {
+  /* Styles for iPhone 14 Max Pro */
+  .menu {
+    position: fixed;
+    top: 10.5%;
+    right: -301px;
+    width: 200px;
+    height: 56.6%;
+    background-color: rgb(49, 45, 45);
+    border: 2px solid rgb(255, 255, 255);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 5%;
+
+    z-index: 150;
+    transition: transform 0.2s ease-in-out;
+    background-image: url(assets/Plants.png);
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: bottom;
+  }
 }
 
 .menu ul {
@@ -103,6 +123,37 @@ p {
 
 .menu.show {
   transform: translateX(-300px);
+}
+
+.content {
+  box-sizing: border-box;
+  justify-content: center;
+  align-content: center;
+  height: 220px;
+  margin: 290px 20px;
+  background: #ffffff;
+  border: 2.5px solid black;
+  border-radius: 4%;
+}
+.content ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-image: url(assets/SymbolsL.png);
+  background-repeat: no-repeat;
+
+  background-size: 140px;
+  background-position-x: right;
+}
+
+.content li {
+  padding-top: 25px;
+  margin-bottom: 0px;
+  padding-bottom: -35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
 
 .hamburger-menu.active .bar:first-child {
