@@ -231,7 +231,7 @@ p {
   position: relative;
   width: 383px;
   height: 529px;
-  padding: 0;
+  padding: 1px;
   top: 314px;
 
   font-family: "Playfair Display";
@@ -240,7 +240,7 @@ p {
   font-size: 24px;
   line-height: 28px;
 
-  color: #b43a3a;
+  color: #020202;
 
   background-image: url(/assets/Plants.png);
   background-repeat: no-repeat;
