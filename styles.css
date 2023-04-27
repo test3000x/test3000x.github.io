@@ -81,46 +81,8 @@ p {
   background-position-x: left;
   background-position-y: bottom;
 }
-@media only screen and (device-width: 430px) and (device-height: 932px) {
-  /* Styles for iPhone 14 Max Pro */
-  .menu {
-    position: fixed;
-    right: -301px;
-    width: 200px;
-    height: 56.6%;
-    background-color: rgb(49, 45, 45);
-    border: 2px solid rgb(255, 255, 255);
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 5%;
 
-    z-index: 150;
-    transition: transform 0.2s ease-in-out;
-    background-image: url(assets/Plants.png);
-    background-repeat: no-repeat;
-    background-position-x: 20px;
-    background-position-y: bottom;
-  }
-}
-@media only screen and (device-width: 428px) and (device-height: 926px) {
-  /* Styles for iPhone 12 Max Pro */
-  .menu {
-    position: fixed;
-    right: -301px;
-    width: 200px;
-    height: 56.6%;
-    background-color: rgb(49, 45, 45);
-    border: 2px solid rgb(255, 255, 255);
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 5%;
 
-    z-index: 150;
-    transition: transform 0.2s ease-in-out;
-    background-image: url(assets/Plants.png);
-    background-repeat: no-repeat;
-    background-position-x: 20px;
-    background-position-y: bottom;
-  }
-}
 
 .menu ul {
   margin: 0;
