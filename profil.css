@@ -1,21 +1,21 @@
 body {
-  margin: 0;
-  padding: 0;
+  background-color: #d9d9d9;
+  margin: auto;
+  padding: auto;
 }
+
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 80px;
-  background-color: #fff;
+  background-color: #ffffff;
   z-index: 100;
   padding: 0 20px;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #0000006c;
   background-image: url(assets/Symbols.png);
   background-repeat: no-repeat;
   background-size: 17%;
@@ -60,7 +60,7 @@ p {
 
 .menu {
   position: fixed;
-  top: 11.9%;
+  top: 79.8px;
   right: -301px;
   width: 200px;
   height: 56.6%;
@@ -78,6 +78,27 @@ p {
 }
 @media only screen and (device-width: 430px) and (device-height: 932px) {
   /* Styles for iPhone 14 Max Pro */
+  .menu {
+    position: fixed;
+    top: 10.5%;
+    right: -301px;
+    width: 200px;
+    height: 56.6%;
+    background-color: rgb(49, 45, 45);
+    border: 2px solid rgb(255, 255, 255);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 5%;
+
+    z-index: 150;
+    transition: transform 0.2s ease-in-out;
+    background-image: url(assets/Plants.png);
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: bottom;
+  }
+}
+@media only screen and (device-width: 428px) and (device-height: 926px) {
+  /* Styles for iPhone 13 Max Pro and iphone 14 plus */
   .menu {
     position: fixed;
     top: 10.5%;
@@ -181,4 +202,50 @@ p {
 
 .show {
   display: block;
+}
+
+/* Profil CSS down below */
+
+.aboutMe {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.aboutMe .pic {
+  background-image: url(/assets/profilPic.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: 1px solid #000;
+
+  border-color: #ffffff;
+  border-radius: 81px;
+  position: absolute;
+  border-width: 5px;
+  width: 150px;
+  height: 180px;
+  margin-left: auto;
+  top: 110px;
+}
+
+.aboutMe .paragraph {
+  position: relative;
+  width: 383px;
+  height: 529px;
+  margin-left: auto;
+  top: 314px;
+
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #070707;
+
+  background-image: url(/assets/Plants.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: 100px;
 }
