@@ -85,7 +85,6 @@ p {
   /* Styles for iPhone 14 Max Pro */
   .menu {
     position: fixed;
-    top: 10.5%;
     right: -301px;
     width: 200px;
     height: 56.6%;
@@ -106,7 +105,6 @@ p {
   /* Styles for iPhone 12 Max Pro */
   .menu {
     position: fixed;
-    top: 10.5%;
     right: -301px;
     width: 200px;
     height: 56.6%;

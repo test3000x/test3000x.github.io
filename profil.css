@@ -4,7 +4,6 @@ body {
   padding: auto;
 }
 
-
 header {
   display: flex;
   justify-content: space-between;
@@ -80,7 +79,7 @@ p {
   /* Styles for iPhone 14 Max Pro */
   .menu {
     position: fixed;
-    top: 10.5%;
+    
     right: -301px;
     width: 200px;
     height: 56.6%;
@@ -101,7 +100,7 @@ p {
   /* Styles for iPhone 13 Max Pro and iphone 14 plus */
   .menu {
     position: fixed;
-    top: 10.5%;
+    
     right: -301px;
     width: 200px;
     height: 56.6%;
@@ -232,7 +231,7 @@ p {
   position: relative;
   width: 383px;
   height: 529px;
-  margin-left: auto;
+  padding: 0;
   top: 314px;
 
   font-family: "Playfair Display";
