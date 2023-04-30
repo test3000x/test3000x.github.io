@@ -3,9 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" type="text/css" href="contact.css" />
     <title>Contact</title>
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("VialBc7g2DPCyR8tE");
+   })();
+</script>
+
+
+
+
   </head>
   <body>
     <div class="shadow"></div>
@@ -27,22 +40,29 @@
       </ul>
     </div>
     
-    </div>
     <div class="content">
       <!-- Your page content here -->
-     <P class="subtitle">Hoppas mitt arbete intresserade dig
+     <p class="subtitle">Hoppas mitt arbete intresserade dig
         <br> 
         Ta gärna kontakt med mig
         <br>
-        för samarbete eller vid frågor/funderingar.</P>
-        <form>
-            
-            <input  type="text" id="name" name="name" placeholder="Namn" ><br><br>
-            <input type="email" id="email" name="email" placeholder="Email"><br><br>
-           <textarea placeholder="Skriv ditt meddelande här!" id="message" name="message" rows="10" cols="36"></textarea>
+        för samarbete eller vid frågor/funderingar.</p>
+        <form onsubmit="sendMail(); reset(); return false;">
+            <label for="name">Namn:</label><br>
+            <input type="text" id="name" name="name" placeholder="Namn" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+            <label for="phone">Mobil:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="070-123 45 67" required><br><br>
+            <label>Meddelande</label><br>
+           <textarea placeholder="Skriv ditt meddelande här!" id="message" name="message" rows="10" cols="36"></textarea><br>
+           <input class="btn" type="submit" id="button" value="Send" >
         </form>
-
+        
     </div>
+
     <script src="menu.js"></script>
+    <scirpt src="contact.js"></scirpt>
+
   </body>
 </html>
